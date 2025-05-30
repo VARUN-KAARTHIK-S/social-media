@@ -1,0 +1,100 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.profile-card {
+  background-color: #fff;
+  width: 350px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  overflow: hidden;
+  text-align: center;
+  padding: 20px;
+}
+
+.profile-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.profile-card h2 {
+  margin: 10px 0 5px;
+}
+
+.profile-card p {
+  color: #666;
+  margin: 5px 0;
+}
+
+.profile-card .social-links {
+  margin-top: 15px;
+}
+
+.profile-card .social-links a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+  font-size: 20px;
+}
+
+.profile-card button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.profile-card button:hover {
+  background-color: #0056b3;
+}
+
+.theme-toggle {
+  margin-top: 15px;
+  cursor: pointer;
+  color: #007bff;
+  text-decoration: underline;
+}
+
+/* Dark theme styles */
+body.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+body.dark-mode .profile-card {
+  background-color: #444;
+  color: #fff;
+}
+
+body.dark-mode .profile-card p {
+  color: #ccc;
+}
+
+body.dark-mode .profile-card .social-links a {
+  color: #fff;
+}
+
+body.dark-mode .profile-card button {
+  background-color: #28a745;
+}
+
+body.dark-mode .profile-card button:hover {
+  background-color: #1e7e34;
+}
+
+body.dark-mode .theme-toggle {
+  color: #28a745;
+}

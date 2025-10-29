@@ -1,0 +1,38 @@
+ATTENDANCE MANAGEMENT SYSTEM - CONSOLE APPLICATION
+==================================================
+
+SETUP INSTRUCTIONS:
+
+1. DATABASE SETUP:
+   - Install MySQL Server
+   - Run the database setup script:
+     mysql -u root -p < setup_database.sql
+
+2. DOWNLOAD MYSQL CONNECTOR:
+   - Download mysql-connector-java-8.0.33.jar from:
+     https://dev.mysql.com/downloads/connector/j/
+   - Place it in the same folder as your Java files
+
+3. UPDATE DATABASE CREDENTIALS:
+   - Open src/main/java/Main3/Main7.java
+   - Update these lines with your MySQL credentials:
+     private static final String DB_PASSWORD = "your_mysql_password";
+
+4. COMPILE AND RUN:
+   - Compile:
+     javac -cp mysql-connector-java-8.0.33.jar src/main/java/Main3/Main7.java
+   
+   - Run:
+     java -cp .;mysql-connector-java-8.0.33.jar Main3.Main7
+     (On Windows use semicolon, on Linux/Mac use colon)
+
+FEATURES:
+- Mark attendance for 7 periods per day
+- Add/Remove students
+- View attendance summary
+- All data stored in MySQL database
+
+TROUBLESHOOTING:
+- If "MySQL JDBC Driver not found" error: Check mysql-connector-java.jar is in classpath
+- If "Access denied" error: Check MySQL username/password
+- If "Database connection failed": Ensure MySQL server is running
